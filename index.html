@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+<html lang="du">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ----------main style------------ -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <!-- ------------Google Fonts-------------- -->
+        <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <!-- --------------Icon pack font-awesome----------- -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- --------------------Google Maps Api---------------- -->
+        <script defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl7F3URup7S4Of3R3cJQLk535vNnUQRzg&callback=initMap">
+        </script>
+        <title> Élixirs by Ibtehaj |WITNESSING THE MAGIC OF PERFUMES </title>
+            <!-- For PNG format -->
+<link rel="icon" href="img/Untitled_design-removebg-preview.png" type="image/png">
+
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="img/Untitled_design-removebg-preview.png" style="height: 80px; width: 80px;" alt="logo-image">
+                    </div>
+                    <nav>
+                        <ul id="menu-items">
+                            <li><a href="">Home</a></li>
+                            <li><a href="index2.html">Products</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="register.html">Account</a></li>
+                        </ul>
+                    </nav>
+                    <img src="images/cart.png" alt="cart" width="30px" height="30px" class="cart-img">
+                    <img src="images/menu.png" alt="menu" width="30px" height="30px" class="menu-icon" onclick="menutoggle()">
+                </div>
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <h1 class="text-white">Great deals happening <br> Right Now!</h1>
+                        <p>Enjoy a safe, convenient shopping experience</p>
+                        <p>Shop stress-free from home. We’re ready to help, online or by phone.</p>
+                        <a href="" class="btn btn-main">Explore Now &#8594;</a>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/perfumes.jpg" alt="banner-image" class="center">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- featured products -->
+        <div class="small-container mt-5">
+            <h2 class="title">Featured Products</h2>
+            <div class="row horizontal-scroll-wrapper squares">
+                <div class="col-4 box-container">
+                    <div class="image-overlay"></div>
+                    <img src="img/Perfume Bvlgari Man In Black EDP.jpg" alt="Bvlgari men in Black">
+                    <h5 class="product_name">Bvlgari Men In Black</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <div class="content-details fadeIn-bottom">
+                        <h3 class="content-title">Bvlgari men in Black</h3>
+                        <h4 class="content-price">Rs12000</h4>
+                        <div class="content-btn btn btn-secondary" title="Add to Cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <p class="price_name" >Rs12000</p>
+                    <!-- <div class="btn btn-secondary" title="Preview Item"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+                    </div> -->
+                </div>
+                <div class="col-4 box-container">
+                    <img src="img/Savage dior.jpg" alt="Savage Dior">
+                    <h5 class="product_name">Savage Dior</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >Rs13500</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="img/Guilty Pour Homme Gucci Perfume Masculino Eau de Toilette 50Ml.jpg" alt="Gucci Guilty">
+                    <h5 class="product_name">Gucci Guilty</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p class="price_name" >Rs8500</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="img/Creed Aventus, Men's Luxury Cologne.jpg" alt="Creed Aventus">
+                    <h5 class="product_name">Creed Aventus 100mg</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >Rs10,000</p>
+                </div>
+            </div>
+            <!-- Latest products -->
+            <h2 class="title">Latest Products</h2>
+            <div class="row">
+                <div class="col-4 box-container">
+                    <img src="img/Aqva Marine Pour Homme Bvlgari Perfume Masculino Eau de Toilette 50Ml.jpg" alt="Bvlgari Aqua">
+                    <h5 class="product_name">Bvlgari Aqua</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >Rs7600</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="img/black opium.jpg" alt="Black Opium">
+                    <h5 class="product_name">Black Opium</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >R9000</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="img/Meet Ali Naim Ulusoglu_ Luxury Still Life Photographer.jpg" alt="One Million">
+                    <h5 class="product_name">One Million</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >Rs6999</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="img/Dunhill.jpg" alt="Dunhill">
+                    <h5 class="product_name">Dunhill Desire</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p class="price_name" >Rs8500</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="img/versace bright crystal perfume _ click for link.jpg" alt="Imac">
+                    <h5 class="product_name">Versace Bright crystal</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >Rs7999</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="img/tommy girl.jpg" alt="Tommy Girl">
+                    <h5 class="product_name">Tommy Girl</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >Rs9000</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="img/tommy boy.jpg" alt="Tommy Boy">
+                    <h5 class="product_name">Tommy Boy</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >Rs9000</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="img/MONTBLANC Legend Spirit Eau de Toilette Herreduft 100 ml - Eau De Toilette hos Magasin.jpg" alt="montblanc legend spirit">
+                    <h5 class="product_name">montblanc legend spirit</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >Rs10000</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="img/Chance by Chanel🌸✨.jpg" alt="Chance Chanel">
+                    <h5 class="product_name">Chance Chanel</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p class="price_name" >Rs9999</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="img/victor and rolf bonbon (1).jpg" alt="victor and rolf bonbon">
+                    <h5 class="product_name">victor and rolf bonbon</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >Rs7000</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="img/Miller Harris 'Scherzo' Review & The Best Seller Miller Harris Perfumes.jpg" alt="Miller Harris">
+                    <h5 class="product_name">Miller Harris</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >Rs8000</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="img/Giorgio Armani - Acqua di Gio Pour Homme Parfum Refill 150ml.jpg" alt="Aqua Di Gio">
+                    <h5 class="product_name">Aqua Di Gio</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >Rs9800</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="img/Perfume Masculino Paco Rabanne Invictus Platinum Eau de Parfum 50Ml.jpg" alt="Invictus Platinum">
+                    <h5 class="product_name">Invictus Platinum</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >Rs13000</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="img/Armani Armani Code Parfum (125ml).jpg" alt="Armani Code">
+                    <h5 class="product_name">Armani Code</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >Rs10000</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="img/Jean Pault Gaultier Ultra Male.jpg" alt="jean paul gaultier ultra male">
+                    <h5 class="product_name">jean paul gaultier ultra male</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >Rs11500</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="img/Chanel Coco Mademoiselle Eau de Parfum Spray for Women, 3_4 Fluid Ounce.jpg" alt="Coco">
+                    <h5 class="product_name">Coco by Chanel Paris</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >Rs8000</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- offer -->
+        <div class="offer">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="images/asus-banner.png" class="offer-img">
+                    </div>
+                    <div class="col-6 text-data text-white">
+                        <p>Top Prodcuts you should take it</p>
+                        <h1>Best Product limitd offer!</h1>
+                        
+                        <a href="" class="btn">Buy Now &#8594</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="locate">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-2">
+                        <h3>My Google Maps Demo</h3>
+                        <div id="map"></div>
+                    </div>
+                    <div class="col-2">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- brands -->
+        <div class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="img/savage.jpg" alt="savage logo">
+                    </div>
+                    <div class="col-3">
+                        <img src="img/Polo Ralph Lauren Opens First Store in Rome.jpg" alt="Polo logo">
+                    </div>
+                    <div class="col-3">
+                        <img src="img/armani.jpg" alt="armani logo">
+                    </div>
+                    <div class="col-3">
+                        <img src="img/chanel.jpg" alt="chanel logo">
+                    </div>
+                    <div class="col-3">
+                        <img src="img/gucci.jpg" alt="gucci logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- -------footer------ -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download our app</h3>
+                        <p>Top G5  Enabled Prodcuts with good support</p>
+                        <div class="app-logo">
+                            <img src="images/playstore.png" alt="">
+                            <img src="images/appstore.png" alt="">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images" alt="">
+                        <p>Best technology enabled product?</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2024 Ibtehaj</p>
+            </div>
+        </div>
+        <script src="main.js"></script>
+            <!--Load the API from the specified URL
+            * The async attribute allows the browser to render the page while the API loads
+            * The key parameter will contain your own API key (which is not needed for this tutorial)
+            * The callback parameter executes the initMap() function
+            -->
+    </body>
+
+</html>
